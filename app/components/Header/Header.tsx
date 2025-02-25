@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
 
 import {
@@ -25,10 +27,10 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { ThemeButton } from "../ThemeButton/ThemeButton";
 
-import Link from "next/link";
+import ThemeButton from "../ThemeButton/ThemeButton";
 import Search from "../Search/Search";
+
 
 interface MenuItem {
   title: string;
@@ -62,7 +64,7 @@ interface HeaderProps {
   };
 }
 
-const Header = ({
+const Header: React.FC = ({
   logo = {
     url: "/",
     src: "logo.svg",
@@ -85,7 +87,7 @@ const Header = ({
           description: "Our mission is to innovate and empower the world",
           icon: <Trees className="size-5 shrink-0" />,
           url: "#",
-        }
+        },
       ],
     },
     {
@@ -109,7 +111,7 @@ const Header = ({
           description: "Check the current status of our services and APIs",
           icon: <Trees className="size-5 shrink-0" />,
           url: "#",
-        }
+        },
       ],
     },
     {
@@ -139,7 +141,7 @@ const Header = ({
           description: "Check the current status of our services and APIs",
           icon: <Trees className="size-5 shrink-0" />,
           url: "#",
-        }
+        },
       ],
     },
     {
@@ -157,10 +159,10 @@ const Header = ({
           description: "We are here to help you with any questions you have",
           icon: <Sunset className="size-5 shrink-0" />,
           url: "#",
-        }
+        },
       ],
     },
-  ]
+  ],
 }: HeaderProps) => {
   return (
     <section className="py-4 flex justify-center">
@@ -180,8 +182,8 @@ const Header = ({
             </div>
           </div>
           <div className="flex gap-2 items-center">
-            <Search/>
-            <ThemeButton/>
+            <Search />
+            <ThemeButton />
           </div>
         </nav>
         <div className="block lg:hidden">
@@ -216,8 +218,8 @@ const Header = ({
                     {menu.map((item) => renderMobileMenuItem(item))}
                   </Accordion>
                   <div className="flex flex-col gap-3">
-                    <Search/>
-                    <ThemeButton/>
+                    <Search />
+                    <ThemeButton />
                   </div>
                 </div>
               </SheetContent>
@@ -312,4 +314,4 @@ const renderMobileMenuItem = (item: MenuItem) => {
   );
 };
 
-export default Header ;
+export default Header;

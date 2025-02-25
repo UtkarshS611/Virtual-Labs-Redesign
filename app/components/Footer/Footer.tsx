@@ -30,7 +30,7 @@ const sections = [
   },
 ];
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <section className="py-8">
       <div className="container">

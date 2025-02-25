@@ -2,7 +2,7 @@ import { ChevronRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <section className="py-32">
       <div>

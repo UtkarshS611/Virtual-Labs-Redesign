@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "./components/Hero/Hero";
-import Faq from "./components/Faq/Faq";
+import Faq  from "./components/Faq/Faq";
 
 const Home: React.FC = () => {
   return (
