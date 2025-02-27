@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div>
         <div className="container">
           <div className="mx-auto flex max-w-5xl flex-col items-center">
-            <div className="z-10 items-center text-center">
+            <div className="items-center text-center">
               <h1 className="mb-8 text-4xl font-semibold text-pretty lg:text-7xl">
                 Explore, Experiment and Discover
               </h1>

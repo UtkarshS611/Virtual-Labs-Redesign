@@ -165,7 +165,7 @@ const Header: React.FC = ({
   ],
 }: HeaderProps) => {
   return (
-    <section className="py-4 flex justify-center">
+    <section className="py-4 flex justify-center ">
       <div className="w-full">
         <nav className="hidden justify-between lg:flex">
           <div className="flex items-center gap-6">
