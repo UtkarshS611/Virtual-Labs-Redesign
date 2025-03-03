@@ -1,14 +1,16 @@
 import { ChevronRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import HeroFloat from "./HeroFloat/HeroFloat";
 
 const Hero: React.FC = () => {
   return (
-    <section className="py-32">
-      <div>
+    <section>
+      <HeroFloat />
+      <div className="py-32">
         <div className="container">
-          <div className="mx-auto flex max-w-5xl flex-col items-center">
-            <div className="items-center text-center">
+          <div className="mx-auto flex max-w-full flex-col items-center relative">
+            <div className="items-center text-center content-center relative max-w-5xl">
               <h1 className="mb-8 text-4xl font-semibold text-pretty lg:text-7xl">
                 Explore, Experiment and Discover
               </h1>
@@ -31,7 +33,9 @@ const Hero: React.FC = () => {
             </div>
           </div>
           <div className="bg-black/10 dark:bg-white/10 rounded-lg p-2 mt-24 max-w-6xl mx-auto">
-            <div className="bg-black h-72 sm:h-[60vh] rounded-sm shadow-md text-center content-center">hey</div>
+            <div className="dark:bg-black bg-gray-500 h-72 sm:h-[60vh] rounded-sm shadow-md text-center content-center">
+              ewffwfhey
+            </div>
           </div>
         </div>
       </div>
