@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
           <div className="bg-black/10 dark:bg-white/10 rounded-lg p-2 mt-24 max-w-6xl mx-auto">
-            <div className="relative dark:bg-black bg-gray-500 h-72 sm:h-[60vh] rounded-sm shadow-md text-center content-center">
+            <div className="relative dark:bg-black bg-gray-500 h-72 sm:h-[60vh] rounded-sm shadow-md text-center content-center group overflow-hidden">
               <video
                 ref={videoRef}
                 src="/HeroVideo/HeroVideo.mp4"
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
               {/* Play/Pause Button */}
               <button
                 onClick={togglePlayPause}
-                className="absolute inset-0 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center text-primary bg-black/40 w-16 h-16 rounded-full opacity-80 hover:opacity-100 transition"
+                className="absolute inset-0 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] items-center justify-center text-primary bg-black/40 w-16 h-16 rounded-full hidden group-hover:flex transition"
               >
                 {isPlaying ? "⏸" : "▶"}
               </button>
