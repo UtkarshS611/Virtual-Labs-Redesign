@@ -30,7 +30,7 @@ import {
 
 import ThemeButton from "../ThemeButton/ThemeButton";
 import Search from "../Search/Search";
-
+import Image from "next/image";
 
 interface MenuItem {
   title: string;
@@ -170,7 +170,13 @@ const Header: React.FC = ({
         <nav className="hidden justify-between lg:flex">
           <div className="flex items-center gap-6">
             <Link href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="w-8" alt={logo.alt} />
+              <Image
+                width={50}
+                height={50}
+                src={logo.src}
+                className="w-8"
+                alt={logo.alt}
+              />
               <span className="text-lg font-semibold">{logo.title}</span>
             </Link>
             <div className="flex items-center">
@@ -189,7 +195,13 @@ const Header: React.FC = ({
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">
             <Link href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="w-8" alt={logo.alt} />
+              <Image
+                width={50}
+                height={50}
+                src={logo.src}
+                className="w-8"
+                alt={logo.alt}
+              />
               <span className="text-lg font-semibold">{logo.title}</span>
             </Link>
             <Sheet>
@@ -202,7 +214,13 @@ const Header: React.FC = ({
                 <SheetHeader>
                   <SheetTitle>
                     <Link href={logo.url} className="flex items-center gap-2">
-                      <img src={logo.src} className="w-8" alt={logo.alt} />
+                      <Image
+                        width={50}
+                        height={50}
+                        src={logo.src}
+                        className="w-8"
+                        alt={logo.alt}
+                      />
                       <span className="text-lg font-semibold">
                         {logo.title}
                       </span>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const sections = [
@@ -39,7 +40,9 @@ const Footer: React.FC = () => {
             <div className="flex w-full max-w-96 shrink flex-col items-center justify-between gap-6 lg:items-start">
               <div>
                 <span className="flex items-center justify-center gap-4 lg:justify-start">
-                  <img
+                  <Image
+                  width={50}
+                  height={50}
                     src="logo.svg"
                     alt="logo"
                     className="h-11"
