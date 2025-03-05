@@ -1,9 +1,28 @@
-import { ChevronRight } from "lucide-react";
+"use client";
+import React, { useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import HeroFloat from "./HeroFloat/HeroFloat";
+import { ChevronRight } from "lucide-react";
 
 const Hero: React.FC = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [showControls, setShowControls] = useState(false);
+
+  const togglePlayPause = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+        setShowControls(false); // Hide controls when paused
+      } else {
+        videoRef.current.play();
+        setShowControls(true); // Show controls when playing
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
   return (
     <section>
       <HeroFloat />
@@ -33,8 +52,21 @@ const Hero: React.FC = () => {
             </div>
           </div>
           <div className="bg-black/10 dark:bg-white/10 rounded-lg p-2 mt-24 max-w-6xl mx-auto">
-            <div className="dark:bg-black bg-gray-500 h-72 sm:h-[60vh] rounded-sm shadow-md text-center content-center">
-              ewffwfhey
+            <div className="relative dark:bg-black bg-gray-500 h-72 sm:h-[60vh] rounded-sm shadow-md text-center content-center">
+              <video
+                ref={videoRef}
+                src="/HeroVideo/HeroVideo.mp4"
+                muted
+                controls={showControls}
+                className="w-full h-full object-cover"
+              ></video>
+              {/* Play/Pause Button */}
+              <button
+                onClick={togglePlayPause}
+                className="absolute inset-0 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center text-primary bg-black/40 w-16 h-16 rounded-full opacity-80 hover:opacity-100 transition"
+              >
+                {isPlaying ? "⏸" : "▶"}
+              </button>
             </div>
           </div>
         </div>

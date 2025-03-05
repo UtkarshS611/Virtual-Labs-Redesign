@@ -6,9 +6,6 @@ interface FieldContent {
   id: string;
   title: string;
   summary: string;
-  label: string;
-  author: string;
-  published: string;
   url: string;
   image: string;
   tags?: string[];
@@ -25,28 +22,48 @@ const Fields = ({
   description = "Discover the wide range of topics and fields you can explore to enhance your skills and knowledge and take your first step towards excellence.",
   posts = [
     {
-      id: "post-1",
-      title:
-        "Mechanical Engineering",
+      id: "1",
+      title: "Mechanical Engineering",
       summary:
-        "Join us for an in-depth exploration of building modern user interfaces using shadcn/ui and React. Learn best practices and advanced techniques.",
-      label: "Web Design",
-      author: "Sarah Chen",
-      published: "15 Feb 2024",
+        "Interactive mechanical engineering experiments for virtual labs, enhancing learning with simulations, analysis, and real-world applications.",
       url: "https://shadcnblocks.com",
-      image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+      image: "/Fields/Mechanical.avif",
       tags: ["Engineering"],
     },
     {
-      id: "post-2",
-      title: "Mastering Tailwind CSS: From Basics to Advanced Techniques",
+      id: "2",
+      title: "Chemical Engineering",
       summary:
-        "Discover how to leverage the full power of Tailwind CSS to create beautiful, responsive websites with clean and maintainable code.",
-      label: "Web Design",
-      author: "Michael Park",
-      published: "22 Feb 2024",
+        "Explore virtual chemical reactions, process simulations, and safety analysis for hands-on learning.",
       url: "https://shadcnblocks.com",
-      image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+      image: "/Fields/Chemical.avif",
+      tags: ["Engineering"],
+    },
+    {
+      id: "3",
+      title: "Electronics and Communication Engineering",
+      summary:
+        "Simulate circuits, signal processing, and communication systems for practical electronics engineering training.",
+      url: "https://shadcnblocks.com",
+      image: "/Fields/Electronics.avif",
+      tags: ["Engineering"],
+    },
+    {
+      id: "4",
+      title: "Biotechnology",
+      summary:
+        "Conduct virtual biotech experiments, from genetic analysis to bioprocess simulations, enhancing research skills.",
+      url: "https://shadcnblocks.com",
+      image: "/Fields/Biotech.avif",
+      tags: ["Engineering"],
+    },
+    {
+      id: "5",
+      title: "Electrical Engineering",
+      summary:
+        "Experiment with power systems, circuits, and control systems through interactive virtual lab simulations.",
+      url: "https://shadcnblocks.com",
+      image: "/Fields/Electrical.avif",
       tags: ["Engineering"],
     },
   ],
@@ -73,7 +90,9 @@ const Fields = ({
                 <div className="sm:col-span-5">
                   <div className="mb-4 md:mb-6">
                     <div className="flex flex-wrap gap-3 text-xs uppercase tracking-wider text-muted-foreground md:gap-5 lg:gap-6">
-                      {post.tags?.map((tag) => <span key={tag}>{tag}</span>)}
+                      {post.tags?.map((tag) => (
+                        <span key={tag}>{tag}</span>
+                      ))}
                     </div>
                   </div>
                   <h3 className="text-xl font-semibold md:text-2xl lg:text-3xl">
@@ -88,13 +107,6 @@ const Fields = ({
                   <p className="mt-4 text-muted-foreground md:mt-5">
                     {post.summary}
                   </p>
-                  <div className="mt-6 flex items-center space-x-4 text-sm md:mt-8">
-                    <span className="text-muted-foreground">{post.author}</span>
-                    <span className="text-muted-foreground">•</span>
-                    <span className="text-muted-foreground">
-                      {post.published}
-                    </span>
-                  </div>
                   <div className="mt-6 flex items-center space-x-2 md:mt-8">
                     <a
                       href={post.url}
@@ -126,4 +138,4 @@ const Fields = ({
   );
 };
 
-export default Fields ;
+export default Fields;
