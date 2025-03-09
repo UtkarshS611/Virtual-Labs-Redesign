@@ -4,7 +4,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const OPENWEATHER_API_KEY = "4e4df5f9b9c5b5d4193955569bf194b4"; // Get from https://openweathermap.org/
+const OPENWEATHER_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
 const ELEVATION_API_URL = "https://api.open-elevation.com/api/v1/lookup";
 
 const useGeolocation = () => {
@@ -54,7 +54,7 @@ const useWeatherAndAltitude = (lat: number | null, lng: number | null) => {
     const fetchWeather = async () => {
       try {
         const weatherRes = await axios.get(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=${OPENWEATHER_API_KEY}`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=${OPENWEATHER_KEY}`
         );
         const { temp, humidity } = weatherRes.data.main;
 
