@@ -1,6 +1,17 @@
 import Link from "next/link";
 
-import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
+import {
+  Book,
+  ChartSpline,
+  FileChartColumn,
+  FilePlus,
+  GraduationCap,
+  Menu,
+  ScreenShare,
+  SearchSlash,
+  Sunset,
+  Telescope,
+} from "lucide-react";
 
 import {
   Accordion,
@@ -85,7 +96,7 @@ const Header: React.FC = ({
         {
           title: "VLead",
           description: "Our mission is to innovate and empower the world",
-          icon: <Trees className="size-5 shrink-0" />,
+          icon: <SearchSlash className="size-5 shrink-0" />,
           url: "vlead",
         },
       ],
@@ -97,8 +108,8 @@ const Header: React.FC = ({
         {
           title: "Learner",
           description: "Get all the answers you need right here",
-          icon: <Zap className="size-5 shrink-0" />,
-          url: "#",
+          icon: <GraduationCap className="size-5 shrink-0" />,
+          url: "/experiments",
         },
         {
           title: "Facilitator",
@@ -109,7 +120,7 @@ const Header: React.FC = ({
         {
           title: "Creator",
           description: "Check the current status of our services and APIs",
-          icon: <Trees className="size-5 shrink-0" />,
+          icon: <FilePlus className="size-5 shrink-0" />,
           url: "#",
         },
       ],
@@ -121,25 +132,25 @@ const Header: React.FC = ({
         {
           title: "Create a Experiment",
           description: "Get all the answers you need right here",
-          icon: <Zap className="size-5 shrink-0" />,
+          icon: <FilePlus className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "Start Learning",
           description: "We are here to help you with any questions you have",
-          icon: <Sunset className="size-5 shrink-0" />,
+          icon: <GraduationCap className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "Host Workshop",
           description: "Check the current status of our services and APIs",
-          icon: <Trees className="size-5 shrink-0" />,
+          icon: <ScreenShare className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "Explore Research",
           description: "Check the current status of our services and APIs",
-          icon: <Trees className="size-5 shrink-0" />,
+          icon: <Telescope className="size-5 shrink-0" />,
           url: "#",
         },
       ],
@@ -151,13 +162,13 @@ const Header: React.FC = ({
         {
           title: "Summary",
           description: "Get all the answers you need right here",
-          icon: <Zap className="size-5 shrink-0" />,
+          icon: <FileChartColumn className="size-5 shrink-0" />,
           url: "#",
         },
         {
           title: "Detailed Analytics",
           description: "We are here to help you with any questions you have",
-          icon: <Sunset className="size-5 shrink-0" />,
+          icon: <ChartSpline className="size-5 shrink-0" />,
           url: "#",
         },
       ],
