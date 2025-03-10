@@ -1,6 +1,5 @@
 import CustomBox from "@/components/ui/CustomBox";
 import { Button } from "@/components/ui/button";
-import { Heart, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
