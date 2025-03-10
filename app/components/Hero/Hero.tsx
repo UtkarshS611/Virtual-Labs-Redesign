@@ -4,6 +4,7 @@ import React, { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import HeroFloat from "./HeroFloat/HeroFloat";
 import { ChevronRight } from "lucide-react";
+import CustomBox from "@/components/ui/CustomBox";
 
 const Hero: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -30,8 +31,9 @@ const Hero: React.FC = () => {
         <div className="container">
           <div className="mx-auto flex max-w-full flex-col items-center relative">
             <div className="items-center text-center content-center relative max-w-5xl">
-              <h1 className="mb-8 text-4xl font-semibold text-pretty lg:text-7xl">
-                Explore, Experiment and Discover
+              <h1 className="mb-8 text-4xl font-semibold text-pretty lg:text-7xl flex flex-col items-center gap-2">
+                Explore, Experiment and 
+                <CustomBox content={"Discover"}/>
               </h1>
               <p className="mx-auto text-muted-foreground lg:text-xl">
                 The VLEAD Team at IIIT Hyderabad optimizes Virtual Labs by
