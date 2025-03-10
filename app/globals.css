@@ -84,5 +84,5 @@ body {
 }
 
 *::selection{
-  @apply bg-emerald-200 text-black;
+  @apply bg-primary/10 dark:bg-primary text-black;
 }

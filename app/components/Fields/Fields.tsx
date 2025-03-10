@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import CustomBox from "@/components/ui/CustomBox";
 
 interface FieldContent {
   id: string;
@@ -13,13 +14,11 @@ interface FieldContent {
 }
 
 interface FieldProps {
-  heading?: string;
   description?: string;
   posts?: FieldContent[];
 }
 
 const Fields = ({
-  heading = "Learning Spheres",
   description = "Discover the wide range of topics and fields you can explore to enhance your skills and knowledge and take your first step towards excellence.",
   posts = [
     {
@@ -73,8 +72,8 @@ const Fields = ({
     <section className="py-32">
       <div className="container flex flex-col items-center gap-16">
         <div className="text-center">
-          <h2 className="mx-auto mb-6 text-pretty text-3xl font-semibold md:text-4xl lg:max-w-3xl">
-            {heading}
+          <h2 className="mx-auto mb-6 text-pretty text-3xl font-semibold md:text-4xl lg:max-w-3xl flex justify-center">
+            <CustomBox content={"Learning Spheres"} />
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground md:text-lg">
             {description}

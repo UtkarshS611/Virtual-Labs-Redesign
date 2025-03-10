@@ -19,6 +19,7 @@ const Experiments = () => {
           Add to favourites
         </Button>
       ),
+      rating: "3.0",
     },
   ];
 
@@ -47,7 +48,7 @@ const Experiments = () => {
               <h3 className="text-xl font-semibold">{experiment.title}</h3>
               <span className="text-muted-foreground flex items-center gap-1 bg-primary/10 p-1 rounded-sm">
                 <Star className="size-5 fill-primary text-primary" />
-                <p>3.0</p>
+                <p>{experiment.rating}</p>
               </span>
             </div>
             <div className="px-1 pb-4 text-muted-foreground">
