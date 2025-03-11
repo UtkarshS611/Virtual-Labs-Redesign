@@ -76,8 +76,8 @@ const branchs = () => {
 
   return (
     <section className="min-h-screen py-16">
-      <div className="sm:text-start text-center pb-8">
-        <h1 className="text-4xl font-semibold">Branches</h1>
+      <div className="text-center pb-8 ">
+        <h1 className="text-5xl font-semibold">Branches</h1>
         <p className="text-muted-foreground">
           Explore the wide range of branchs and start learning.
         </p>

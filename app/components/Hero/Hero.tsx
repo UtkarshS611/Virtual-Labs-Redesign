@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import HeroFloat from "./HeroFloat/HeroFloat";
 import { ChevronRight } from "lucide-react";
 import CustomBox from "@/components/ui/CustomBox";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -32,8 +33,8 @@ const Hero: React.FC = () => {
           <div className="mx-auto flex max-w-full flex-col items-center relative">
             <div className="items-center text-center content-center relative max-w-5xl">
               <h1 className="mb-8 text-4xl font-semibold text-pretty lg:text-7xl flex flex-col items-center gap-2">
-                Explore, Experiment and 
-                <CustomBox content={"Discover"}/>
+                Explore, Experiment and
+                <CustomBox content={"Discover"} />
               </h1>
               <p className="mx-auto text-muted-foreground lg:text-xl">
                 The VLEAD Team at IIIT Hyderabad optimizes Virtual Labs by
@@ -43,7 +44,9 @@ const Hero: React.FC = () => {
               </p>
               <div className="mt-12 flex w-full flex-col justify-center gap-2 sm:flex-row">
                 <Button>
-                  Start Experimenting
+                  <Link href={"/experiments"} className="w-full h-full">
+                    Start Experimenting
+                  </Link>
                   <ChevronRight className="ml-2 h-4" />
                 </Button>
                 <Button variant="ghost">

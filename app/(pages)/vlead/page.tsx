@@ -20,8 +20,8 @@ const Vlead = () => {
             <TabsTrigger value="Participating Institutes">
                 Timeline
             </TabsTrigger>
-            <TabsTrigger value="Testimonials">Current Team</TabsTrigger>
-            <TabsTrigger value="Testimonials">Past Team</TabsTrigger>
+            <TabsTrigger value="Current Team">Current Team</TabsTrigger>
+            <TabsTrigger value="Past Team">Past Team</TabsTrigger>
             <TabsTrigger value="Testimonials">Testimonials</TabsTrigger>
           </TabsList>
         </div>
@@ -38,6 +38,16 @@ const Vlead = () => {
         <TabsContent value="Participating Institutes">
           <div>
             <div className="container">Participating Institutes</div>
+          </div>
+        </TabsContent>
+        <TabsContent value="Current Team">
+          <div>
+            <div className="container">Current Team</div>
+          </div>
+        </TabsContent>
+        <TabsContent value="Past Team">
+          <div>
+            <div className="container">Past Team</div>
           </div>
         </TabsContent>
         <TabsContent value="Testimonials">
