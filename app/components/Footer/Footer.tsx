@@ -1,33 +1,20 @@
 import Image from "next/image";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 
 const sections = [
   {
-    title: "Product",
-    links: [
-      { name: "Overview", href: "#" },
-      { name: "Pricing", href: "#" },
-      { name: "Marketplace", href: "#" },
-      { name: "Features", href: "#" },
-    ],
+    title: "Address",
+    content: "Engineering and Architecture Division : Room No:B5-203, Vindhya C6, VLEAD, IIIT-H, Gachibowli, Hyderabad - 500032"
   },
   {
-    title: "Company",
-    links: [
-      { name: "About", href: "#" },
-      { name: "Team", href: "#" },
-      { name: "Blog", href: "#" },
-      { name: "Careers", href: "#" },
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { name: "Help", href: "#" },
-      { name: "Sales", href: "#" },
-      { name: "Advertise", href: "#" },
-      { name: "Privacy", href: "#" },
-    ],
+    title: "Contact",
+    content: "Phone: +91-40-6653 1250, Email:support@vlabs.ac.in Development/Outreach : +91-9177792945"
   },
 ];
 
@@ -41,8 +28,8 @@ const Footer: React.FC = () => {
               <div>
                 <span className="flex items-center justify-center gap-4 lg:justify-start">
                   <Image
-                  width={50}
-                  height={50}
+                    width={50}
+                    height={50}
                     src="logo.svg"
                     alt="logo"
                     className="h-11"
@@ -52,46 +39,38 @@ const Footer: React.FC = () => {
               </div>
               <ul className="flex items-center space-x-6 text-muted-foreground">
                 <li className="font-medium hover:text-primary">
-                  <a href="#">
+                  <a href="https://www.instagram.com/thevirtuallabs">
                     <FaInstagram className="size-6" />
                   </a>
                 </li>
                 <li className="font-medium hover:text-primary">
-                  <a href="#">
+                  <a href="https://www.facebook.com/vlead.iiithyd">
                     <FaFacebook className="size-6" />
                   </a>
                 </li>
                 <li className="font-medium hover:text-primary">
-                  <a href="#">
+                  <a href="https://x.com/TheVirtualLabs">
                     <FaTwitter className="size-6" />
                   </a>
                 </li>
                 <li className="font-medium hover:text-primary">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/404/">
                     <FaLinkedin className="size-6" />
                   </a>
                 </li>
                 <li className="font-medium hover:text-primary">
-                  <a href="#">
-                    <FaYoutube
-                     className="size-6" />
+                  <a href="https://www.youtube.com/@virtual-lab-experiments-ii4780">
+                    <FaYoutube className="size-6" />
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="grid grid-cols-3 gap-6 lg:gap-20">
-              {sections.map((section, sectionIdx) => (
-                <div key={sectionIdx}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-20">
+              {sections.map((section, index) => (
+                <div key={index}>
                   <h3 className="mb-6 font-bold">{section.title}</h3>
                   <ul className="space-y-4 text-sm text-muted-foreground">
-                    {section.links.map((link, linkIdx) => (
-                      <li
-                        key={linkIdx}
-                        className="font-medium hover:text-primary"
-                      >
-                        <a href={link.href}>{link.name}</a>
-                      </li>
-                    ))}
+                    {section.content}
                   </ul>
                 </div>
               ))}

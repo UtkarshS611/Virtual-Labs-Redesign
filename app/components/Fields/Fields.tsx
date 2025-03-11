@@ -26,7 +26,7 @@ const Fields = ({
       title: "Mechanical Engineering",
       summary:
         "Interactive mechanical engineering experiments for virtual labs, enhancing learning with simulations, analysis, and real-world applications.",
-      url: "https://shadcnblocks.com",
+      url: "/experiments/mechanical",
       image: "/Fields/Mechanical.avif",
       tags: ["Engineering"],
     },
@@ -35,7 +35,7 @@ const Fields = ({
       title: "Chemical Engineering",
       summary:
         "Explore virtual chemical reactions, process simulations, and safety analysis for hands-on learning.",
-      url: "https://shadcnblocks.com",
+      url: "/experiments/chemical",
       image: "/Fields/Chemical.avif",
       tags: ["Engineering"],
     },
@@ -44,7 +44,7 @@ const Fields = ({
       title: "Electronics and Communication Engineering",
       summary:
         "Simulate circuits, signal processing, and communication systems for practical electronics engineering training.",
-      url: "https://shadcnblocks.com",
+      url: "/experiments/electronics",
       image: "/Fields/Electronics.avif",
       tags: ["Engineering"],
     },
@@ -53,7 +53,7 @@ const Fields = ({
       title: "Biotechnology",
       summary:
         "Conduct virtual biotech experiments, from genetic analysis to bioprocess simulations, enhancing research skills.",
-      url: "https://shadcnblocks.com",
+      url: "/experiments/biotech",
       image: "/Fields/Biotech.avif",
       tags: ["Engineering"],
     },
@@ -62,8 +62,17 @@ const Fields = ({
       title: "Electrical Engineering",
       summary:
         "Experiment with power systems, circuits, and control systems through interactive virtual lab simulations.",
-      url: "https://shadcnblocks.com",
+      url: "/experiments/electrical",
       image: "/Fields/Electrical.avif",
+      tags: ["Engineering"],
+    },
+    {
+      id: "6",
+      title: "Computer Science and Engineering",
+      summary:
+        "Develop coding skills, algorithms, and software applications through virtual labs and programming environments.",
+      url: "/experiments/cse",
+      image: "/Fields/CSE.avif",
       tags: ["Engineering"],
     },
   ],
