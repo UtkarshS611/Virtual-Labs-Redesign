@@ -51,7 +51,32 @@ const Vlabs = () => {
               <div className="flex flex-wrap gap-2 justify-center items-center my-6">
                 <div className="overflow-hidden group h-64 rounded-lg border-[2px] border-primary max-w-md w-full relative">
                   <div className="transition-all duration-200 overlay group-hover:top-[50%] absolute bg-gray-200 dark:bg-white/50 h-full w-full top-[90%] left-0 text-black px-2">
-                    WHAT BROOOOO?
+                    Students
+                  </div>
+                </div>
+                <div className="overflow-hidden group h-64 rounded-lg border-[2px] border-primary max-w-md w-full relative">
+                  <div className="transition-all duration-200 overlay group-hover:top-[50%] absolute bg-gray-200 dark:bg-white/50 h-full w-full top-[90%] left-0 text-black px-2">
+                    Students
+                  </div>
+                </div>
+                <div className="overflow-hidden group h-64 rounded-lg border-[2px] border-primary max-w-md w-full relative">
+                  <div className="transition-all duration-200 overlay group-hover:top-[50%] absolute bg-gray-200 dark:bg-white/50 h-full w-full top-[90%] left-0 text-black px-2">
+                    Students
+                  </div>
+                </div>
+                <div className="overflow-hidden group h-64 rounded-lg border-[2px] border-primary max-w-md w-full relative">
+                  <div className="transition-all duration-200 overlay group-hover:top-[50%] absolute bg-gray-200 dark:bg-white/50 h-full w-full top-[90%] left-0 text-black px-2">
+                    Students
+                  </div>
+                </div>
+                <div className="overflow-hidden group h-64 rounded-lg border-[2px] border-primary max-w-md w-full relative">
+                  <div className="transition-all duration-200 overlay group-hover:top-[50%] absolute bg-gray-200 dark:bg-white/50 h-full w-full top-[90%] left-0 text-black px-2">
+                    Students
+                  </div>
+                </div>
+                <div className="overflow-hidden group h-64 rounded-lg border-[2px] border-primary max-w-md w-full relative">
+                  <div className="transition-all duration-200 overlay group-hover:top-[50%] absolute bg-gray-200 dark:bg-white/50 h-full w-full top-[90%] left-0 text-black px-2">
+                    Students
                   </div>
                 </div>
               </div>

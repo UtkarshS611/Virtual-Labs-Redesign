@@ -7,6 +7,17 @@ import Link from "next/link";
 const branchs = () => {
   const branches = [
     {
+      image: "/Fields/CSE.avif",
+      title: "Computer Science and Engineering",
+      description:
+        "Focuses on computer networks, digital systems, software development, and artificial intelligence for modern technology applications.",
+      ExploreButton: (
+        <Button className="w-full">
+          <Link href={"/experiments/cse"} className="w-full h-full">Explore</Link>
+        </Button>
+      ),
+    },
+    {
       image: "/Fields/Mechanical.avif",
       title: "Mechanical Engineering",
       description:
@@ -58,17 +69,6 @@ const branchs = () => {
       ExploreButton: (
         <Button className="w-full">
           <Link href={"/experiments/electrical"} className="w-full h-full">Explore</Link>
-        </Button>
-      ),
-    },
-    {
-      image: "/Fields/CSE.avif",
-      title: "Computer Science and Engineering",
-      description:
-        "Focuses on computer networks, digital systems, software development, and artificial intelligence for modern technology applications.",
-      ExploreButton: (
-        <Button className="w-full">
-          <Link href={"/experiments/cse"} className="w-full h-full">Explore</Link>
         </Button>
       ),
     },

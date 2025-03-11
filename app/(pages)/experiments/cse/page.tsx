@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 import { Heart, Star } from "lucide-react";
+import Link from "next/link";
 
 const CSE = () => {
   const experiments = [
@@ -12,7 +13,9 @@ const CSE = () => {
       title: "Bubble Sort Algorithm",
       description:
         "Demonstrates the working of the Bubble Sort algorithm by repeatedly swapping adjacent elements until sorted.",
-      startButton: <Button className="w-full">Start</Button>,
+      startButton: <Button className="w-full">
+        <Link href={"/experiments/cse/bubbleSort"} className="w-full h-full">Start</Link>
+      </Button>,
       addToFavouritesButton: (
         <Button className="w-full" variant={"outline"}>
           <Heart className="fill-primary text-primary size-5" />

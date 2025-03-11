@@ -137,10 +137,10 @@ const Faq: React.FC = () => {
               {VlabsQuestions.map((item, index) => (
                 <Accordion key={index} type="single" collapsible>
                   <AccordionItem value={`item-${index}`}>
-                    <AccordionTrigger className="hover:text-foreground/60 hover:no-underline">
+                    <AccordionTrigger className="hover:text-primary hover:no-underline">
                       {item.question}
                     </AccordionTrigger>
-                    <AccordionContent>{item.answer}</AccordionContent>
+                    <AccordionContent className="text-muted-foreground">{item.answer}</AccordionContent>
                   </AccordionItem>
                 </Accordion>
               ))}
@@ -153,10 +153,10 @@ const Faq: React.FC = () => {
               {WorkShopQuestions.map((item, index) => (
                 <Accordion key={index} type="single" collapsible>
                   <AccordionItem value={`item-${index}`}>
-                    <AccordionTrigger className="hover:text-foreground/60 hover:no-underline">
+                    <AccordionTrigger className="hover:text-primary hover:no-underline">
                       {item.question}
                     </AccordionTrigger>
-                    <AccordionContent>{item.answer}</AccordionContent>
+                    <AccordionContent className="text-muted-foreground">{item.answer}</AccordionContent>
                   </AccordionItem>
                 </Accordion>
               ))}
