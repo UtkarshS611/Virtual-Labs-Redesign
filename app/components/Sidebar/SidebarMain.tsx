@@ -65,7 +65,7 @@ const SidebarMain: React.FC<SidebarProps> = ({
           </div>
         </header>
         <main className="ml-4">
-          {/* <section className="space-y-10">
+          <section className="space-y-10 h-[90vh] overflow-y-scroll">
             <div className="space-y-6">
               <div className="space-y2">
                 <h1 className="text-3xl text-primary">Estimated Time</h1>
@@ -104,64 +104,64 @@ const SidebarMain: React.FC<SidebarProps> = ({
                 </li>
               </ul>
             </div>
-          </section> */}
-          <section className="h-[90vh] overflow-y-scroll exp">
-            <div className="bg-black/10 dark:bg-white/10 rounded-lg p-2 max-w-6xl mx-auto">
-              <div className="relative dark:bg-black bg-gray-500 h-72 sm:h-[60vh] rounded-sm shadow-md text-center content-center group overflow-hidden">
-                <video
-                  ref={videoRef}
-                  src="/HeroVideo/HeroVideo.mp4"
-                  muted
-                  controls={showControls}
-                  className="w-full h-full object-cover"
-                ></video>
-                <button
-                  onClick={togglePlayPause}
-                  className="absolute inset-0 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] items-center justify-center text-primary bg-black/40 w-16 h-16 rounded-full hidden group-hover:flex transition"
-                >
-                  {isPlaying ? "⏸" : "▶"}
-                </button>
+            <section >
+              <div className="bg-black/10 dark:bg-white/10 rounded-lg p-2 max-w-6xl mx-auto">
+                <div className="relative dark:bg-black bg-gray-500 h-72 sm:h-[60vh] rounded-sm shadow-md text-center content-center group overflow-hidden">
+                  <video
+                    ref={videoRef}
+                    src="/HeroVideo/HeroVideo.mp4"
+                    muted
+                    controls={showControls}
+                    className="w-full h-full object-cover"
+                  ></video>
+                  <button
+                    onClick={togglePlayPause}
+                    className="absolute inset-0 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] items-center justify-center text-primary bg-black/40 w-16 h-16 rounded-full hidden group-hover:flex transition"
+                  >
+                    {isPlaying ? "⏸" : "▶"}
+                  </button>
+                </div>
               </div>
-            </div>
-            <div className="space-y-6 mt-6">
-              <div className="space-y2">
-                <h1 className="text-3xl text-primary">
-                  Prerequisites of the experiment
-                </h1>
-                <Separator />
+              <div className="space-y-6 mt-6">
+                <div className="space-y2">
+                  <h1 className="text-3xl text-primary">
+                    Prerequisites of the experiment
+                  </h1>
+                  <Separator />
+                </div>
+                <p>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <h2 className="text-xl m-4 text-black dark:text-white">
+                      In this experiment, we will be able to do the following:
+                    </h2>
+                    <li>The Notion of sorting.</li>
+                    <li>The Notion of space and time complexity.</li>
+                  </ul>
+                </p>
               </div>
-              <p>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <h2 className="text-xl m-4 text-black dark:text-white">
-                    In this experiment, we will be able to do the following:
-                  </h2>
-                  <li>The Notion of sorting.</li>
-                  <li>The Notion of space and time complexity.</li>
-                </ul>
-              </p>
-            </div>
-            <div className="space-y-6 mt-6">
-              <div className="space-y2">
-                <h1 className="text-3xl text-primary">
-                  Overview of the experiment
-                </h1>
-                <Separator />
+              <div className="space-y-6 mt-6">
+                <div className="space-y2">
+                  <h1 className="text-3xl text-primary">
+                    Overview of the experiment
+                  </h1>
+                  <Separator />
+                </div>
+                <p>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li>
+                      The aim of this experiment is to understand the Bubble
+                      Sort algorithm, its time and space complexity, and how it
+                      compares against other sorting algorithms.
+                    </li>
+                    <li>
+                      The experiment features a series of modules with video
+                      lectures, interactive demonstrations, simulations,
+                      hands-on practice exercises and quizzes.
+                    </li>
+                  </ul>
+                </p>
               </div>
-              <p>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>
-                    The aim of this experiment is to understand the Bubble Sort
-                    algorithm, its time and space complexity, and how it
-                    compares against other sorting algorithms.
-                  </li>
-                  <li>
-                    The experiment features a series of modules with video
-                    lectures, interactive demonstrations, simulations, hands-on
-                    practice exercises and quizzes.
-                  </li>
-                </ul>
-              </p>
-            </div>
+            </section>
           </section>
         </main>
       </SidebarInset>
