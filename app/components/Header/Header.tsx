@@ -197,6 +197,9 @@ const Header: React.FC = ({
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
+            <Link href={"/variables"} className="text-sm text-muted-foreground">
+              Variables
+            </Link>
           </div>
           <div className="flex gap-2 items-center">
             <Search />
@@ -247,6 +250,12 @@ const Header: React.FC = ({
                     {menu.map((item) => renderMobileMenuItem(item))}
                   </Accordion>
                   <div className="flex flex-col gap-3">
+                    <Link
+                      href={"/variables"}
+                      className="text-sm text-muted-foreground"
+                    >
+                      Variables
+                    </Link>
                     <Search />
                     <ThemeButton />
                   </div>
@@ -309,7 +318,10 @@ const renderMenuItem = (item: MenuItem) => {
 const renderMobileMenuItem = (item: MenuItem) => {
   if (item.items) {
     return (
-      <AccordionItem key={item.title} value={item.title} className="border-b-0">
+      <AccordionItem
+        key={item.title}
+        value={item.title}
+      >
         <AccordionTrigger className="py-0 font-semibold hover:no-underline">
           {item.title}
         </AccordionTrigger>

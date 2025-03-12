@@ -4,6 +4,9 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+import { Loader2, MapPin, Thermometer, Droplet, Mountain } from "lucide-react";
+
+
 const OPENWEATHER_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
 const ELEVATION_API_URL = "https://api.open-elevation.com/api/v1/lookup";
 
@@ -80,27 +83,52 @@ const Find = () => {
   const { temp, humidity, altitude } = useWeatherAndAltitude(lat, lng);
 
   return (
-    <section className="min-h-screen">
-      <h2 className="text-xl font-semibold">Your Current Location</h2>
-      {lat && lng ? (
-        <p>
-          Latitude: {lat}, Longitude: {lng}
-        </p>
-      ) : (
-        <p>Fetching location...</p>
-      )}
-      {temp !== null && humidity !== null ? (
-        <p>
-          Temperature: {temp}°C, Humidity: {humidity}%
-        </p>
-      ) : (
-        <p>Fetching weather data...</p>
-      )}
-      {altitude !== null ? (
-        <p>Altitude: {altitude} meters</p>
-      ) : (
-        <p>Fetching altitude...</p>
-      )}
+    <section className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
+      <div className="max-w-md w-full p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white flex items-center gap-2">
+          <MapPin className="text-blue-500" />
+          Your Current Location
+        </h2>
+
+        <div className="mt-4 space-y-3 text-gray-700 dark:text-gray-300">
+          {lat && lng ? (
+            <p className="flex items-center gap-2">
+              <MapPin className="text-green-500" />
+              Latitude: {lat}, Longitude: {lng}
+            </p>
+          ) : (
+            <p className="flex items-center gap-2 text-gray-500">
+              <Loader2 className="animate-spin" />
+              Fetching location...
+            </p>
+          )}
+
+          {temp !== null && humidity !== null ? (
+            <p className="flex items-center gap-2">
+              <Thermometer className="text-red-500" />
+              Temperature: {temp}°C, <Droplet className="text-blue-500" />
+              Humidity: {humidity}%
+            </p>
+          ) : (
+            <p className="flex items-center gap-2 text-gray-500">
+              <Loader2 className="animate-spin" />
+              Fetching weather data...
+            </p>
+          )}
+
+          {altitude !== null ? (
+            <p className="flex items-center gap-2">
+              <Mountain className="text-purple-500" />
+              Altitude: {altitude} meters
+            </p>
+          ) : (
+            <p className="flex items-center gap-2 text-gray-500">
+              <Loader2 className="animate-spin" />
+              Fetching altitude...
+            </p>
+          )}
+        </div>
+      </div>
     </section>
   );
 };
