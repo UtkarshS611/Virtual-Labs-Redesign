@@ -189,7 +189,7 @@ const Vlead = () => {
                 The Virtual Labs Engineering, Architecture, and Design (VLEAD)
                 Team at IIIT Hyderabad is a dedicated team responsible for
                 overseeing the central platform engineering operations,
-                engineering, and development coordination. The team's key
+                engineering, and development coordination. The team&apos;s key
                 responsibilities include:
               </p>
               {/* Gallery section */}
