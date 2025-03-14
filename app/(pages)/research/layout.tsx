@@ -1,10 +1,8 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import clsx from "clsx";
 import {
   BookCheck,
-  ChevronRight,
   Columns2,
   LayoutList,
   ServerCrash,

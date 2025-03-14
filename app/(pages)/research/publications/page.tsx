@@ -120,8 +120,8 @@ const Publications = () => {
               Press, 2013.
             </li>
             <li>
-              V. Choppella, K. Viswanath and M. Kumar, "Algodynamics: Algorithms
-              as systems," in 2021 IEEE Frontiers in Education Conference,
+              V. Choppella, K. Viswanath and M. Kumar, &quot;Algodynamics: Algorithms
+              as systems,&quot; in 2021 IEEE Frontiers in Education Conference,
               Lincoln, NE, USA, 2021, pp. 1-9
             </li>
           </ul>
