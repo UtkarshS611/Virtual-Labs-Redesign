@@ -4,7 +4,7 @@ import Sidebar from "@/app/components/Sidebar/Sidebar";
 import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
 
-const layout = ({ children }: { children: React.ReactNode }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
@@ -20,4 +20,4 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default layout;
+export default Layout;

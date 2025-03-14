@@ -12,6 +12,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed }) => {
   const links = [
     {
       title: "Aim",
+      url: "/experiments/cse/bubbleSort/aim",
       icon: <Home size={20}/>,
     },
   ];
@@ -24,7 +25,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed }) => {
       )}
     >
       {links.map((link, index) => (
-        <Link href={"/experiments/cse/bubbleSort/aim"} key={index} className="flex rounded-sm py-1 px-2 items-center space-x-3">
+        <Link href={link.url} key={index} className="flex rounded-sm py-1 px-2 items-center space-x-3">
           {link.icon}
           {!isCollapsed && (
             <span>{link.title}</span>
