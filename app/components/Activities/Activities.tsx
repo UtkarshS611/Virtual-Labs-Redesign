@@ -37,7 +37,7 @@ const Activities: React.FC = () => {
         "Advancing innovation through research, exploring new technologies, and enhancing virtual lab experiences.",
       Button: (
         <Button className="w-full">
-          <Link href={"/research"}>Learn More</Link>
+          <Link href={"/research/problems"}>Learn More</Link>
         </Button>
       ),
       rating: "3.0",
