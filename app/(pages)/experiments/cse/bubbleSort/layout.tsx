@@ -1,7 +1,7 @@
 "use client";
 
 import Sidebar from "@/app/components/Sidebar/Sidebar";
-import { Columns2, Home } from "lucide-react";
+import { Columns2 } from "lucide-react";
 import React, { useState } from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
