@@ -14,7 +14,7 @@ const CSE = () => {
       description:
         "Demonstrates the working of the Bubble Sort algorithm by repeatedly swapping adjacent elements until sorted.",
       startButton: <Button className="w-full">
-        <Link href={"/experiments/cse/bubbleSort"} className="w-full h-full">Start</Link>
+        <Link href={"/experiments/cse/bubbleSort/aim"} className="w-full h-full">Start</Link>
       </Button>,
       addToFavouritesButton: (
         <Button className="w-full" variant={"outline"}>
