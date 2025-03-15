@@ -2,8 +2,6 @@ import Link from "next/link";
 
 import {
   Book,
-  ChartSpline,
-  FileChartColumn,
   FilePlus,
   GraduationCap,
   Menu,

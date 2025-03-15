@@ -108,7 +108,9 @@ const Vlead = () => {
                 <div className="flex flex-col gap-12 md:gap-20">
                   {timeline.map((item, index) => (
                     <div key={index} className="rounded-xl border p-2">
-                      <img
+                      <Image
+                        width={400}
+                        height={400}
                         src={item.image}
                         alt={item.title}
                         className="aspect-video w-full rounded-xl border border-dashed object-cover"
@@ -236,12 +238,12 @@ const Vlead = () => {
                   {members.map((member, index) => (
                     <div key={index}>
                       <div className="bg-background size-20 rounded-full border p-0.5 shadow shadow-zinc-950/5">
-                        <img
+                        <Image
+                          width={400}
+                          height={400}
                           className="aspect-square rounded-full object-cover"
                           src={member.avatar}
                           alt={member.name}
-                          height="460"
-                          width="460"
                           loading="lazy"
                         />
                       </div>
@@ -265,12 +267,12 @@ const Vlead = () => {
                   {members.map((member, index) => (
                     <div key={index}>
                       <div className="bg-background size-20 rounded-full border p-0.5 shadow shadow-zinc-950/5">
-                        <img
+                        <Image
+                          width={400}
+                          height={400}
                           className="aspect-square rounded-full object-cover"
                           src={member.avatar}
                           alt={member.name}
-                          height="460"
-                          width="460"
                           loading="lazy"
                         />
                       </div>
@@ -294,12 +296,12 @@ const Vlead = () => {
                   {members.map((member, index) => (
                     <div key={index}>
                       <div className="bg-background size-20 rounded-full border p-0.5 shadow shadow-zinc-950/5">
-                        <img
+                        <Image
+                        width={400}
+                        height={400}
                           className="aspect-square rounded-full object-cover"
                           src={member.avatar}
                           alt={member.name}
-                          height="460"
-                          width="460"
                           loading="lazy"
                         />
                       </div>
