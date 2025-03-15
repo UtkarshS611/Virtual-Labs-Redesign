@@ -13,7 +13,7 @@ const Activities: React.FC = () => {
         "Providing reliable hosting, seamless development, and scalable solutions for a robust online presence.",
       Button: (
         <Button className="w-full">
-          <Link href={"/development"}>Learn More</Link>
+          <Link href={"/development/onboarding"}>Learn More</Link>
         </Button>
       ),
       rating: "3.0",
