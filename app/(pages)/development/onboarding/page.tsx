@@ -10,7 +10,7 @@ const Onboarding = () => {
           <Separator />
         </div>
         <p className="text-muted-foreground">
-            Onboarding is the process of integrating a new employee into the organisation and its culture. It is a critical process that can determine the success of the employee in the organisation. The onboarding process helps new employees understand their roles and responsibilities, the company's culture, and the expectations of the organisation. It also helps new employees build relationships with their colleagues and managers, which can help them feel more comfortable and confident in their new role.
+            Onboarding is the process of integrating a new employee into the organisation and its culture. It is a critical process that can determine the success of the employee in the organisation. The onboarding process helps new employees understand their roles and responsibilities, the company&apos;s culture, and the expectations of the organisation. It also helps new employees build relationships with their colleagues and managers, which can help them feel more comfortable and confident in their new role.
         </p>
       </div>
       <div>
