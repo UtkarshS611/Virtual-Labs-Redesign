@@ -115,13 +115,13 @@ const Header: React.FC = ({
           title: "Facilitator",
           description: "We are here to help you with any questions you have",
           icon: <Sunset className="size-5 shrink-0" />,
-          url: "#",
+          url: "/outreach",
         },
         {
           title: "Creator",
           description: "Check the current status of our services and APIs",
           icon: <FilePlus className="size-5 shrink-0" />,
-          url: "#",
+          url: "/development/onboarding",
         },
       ],
     },
@@ -133,46 +133,28 @@ const Header: React.FC = ({
           title: "Create a Experiment",
           description: "Get all the answers you need right here",
           icon: <FilePlus className="size-5 shrink-0" />,
-          url: "#",
+          url: "/development/onboarding",
         },
         {
           title: "Start Learning",
           description: "We are here to help you with any questions you have",
           icon: <GraduationCap className="size-5 shrink-0" />,
-          url: "#",
+          url: "/experiments",
         },
         {
           title: "Host Workshop",
           description: "Check the current status of our services and APIs",
           icon: <ScreenShare className="size-5 shrink-0" />,
-          url: "#",
+          url: "/outreach",
         },
         {
           title: "Explore Research",
           description: "Check the current status of our services and APIs",
           icon: <Telescope className="size-5 shrink-0" />,
-          url: "#",
+          url: "/research/problems",
         },
       ],
-    },
-    {
-      title: "Analytics",
-      url: "#",
-      items: [
-        {
-          title: "Summary",
-          description: "Get all the answers you need right here",
-          icon: <FileChartColumn className="size-5 shrink-0" />,
-          url: "#",
-        },
-        {
-          title: "Detailed Analytics",
-          description: "We are here to help you with any questions you have",
-          icon: <ChartSpline className="size-5 shrink-0" />,
-          url: "#",
-        },
-      ],
-    },
+    }
   ],
 }: HeaderProps) => {
   return (
