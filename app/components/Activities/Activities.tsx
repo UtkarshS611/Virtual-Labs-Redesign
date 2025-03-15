@@ -44,7 +44,7 @@ const Activities: React.FC = () => {
     },
   ];
   return (
-    <section>
+    <section className="flex justify-center">
       <div className="container flex flex-col items-center gap-16">
         <div className="text-center">
           <h2 className="mx-auto mb-6 text-pretty text-3xl font-semibold md:text-4xl lg:max-w-3xl flex justify-center">

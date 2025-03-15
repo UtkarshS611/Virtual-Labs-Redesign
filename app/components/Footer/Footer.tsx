@@ -20,7 +20,7 @@ const sections = [
 
 const Footer: React.FC = () => {
   return (
-    <section className="py-8">
+    <section className="py-8 flex justify-center">
       <div className="container">
         <footer>
           <div className="flex flex-col items-center justify-between gap-10 text-center lg:flex-row lg:text-left">

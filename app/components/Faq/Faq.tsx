@@ -120,7 +120,7 @@ const Faq: React.FC = () => {
   ];
 
   return (
-    <section className="py-32 ">
+    <section className="py-32">
       <Tabs defaultValue="Vlabs">
         <div className="flex md:flex-row flex-col md:gap-0 gap-10 items-center justify-between py-4">
           <h1 className="text-3xl font-semibold md:text-5xl text-center">
@@ -133,7 +133,7 @@ const Faq: React.FC = () => {
         </div>
         <TabsContent value="Vlabs">
           <div>
-            <div className="container">
+            <div className="container mx-auto">
               {VlabsQuestions.map((item, index) => (
                 <Accordion key={index} type="single" collapsible>
                   <AccordionItem value={`item-${index}`}>
@@ -149,7 +149,7 @@ const Faq: React.FC = () => {
         </TabsContent>
         <TabsContent value="Workshops">
           <div>
-            <div className="container">
+            <div className="container mx-auto">
               {WorkShopQuestions.map((item, index) => (
                 <Accordion key={index} type="single" collapsible>
                   <AccordionItem value={`item-${index}`}>

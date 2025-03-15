@@ -26,9 +26,10 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section>
+    <section className="rounded-3xl">
+      {/* bg-gradient-to-t from-primary/20 to-white */}
       <HeroFloat />
-      <div className="py-32">
+      <div className="py-32 flex justify-center">
         <div className="container">
           <div className="mx-auto flex max-w-full flex-col items-center relative">
             <div className="items-center text-center content-center relative max-w-5xl">
