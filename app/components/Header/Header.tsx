@@ -82,78 +82,78 @@ const Header: React.FC = ({
   },
   menu = [
     {
-      title: "About",
-      url: "#",
-      items: [
+      "title": "About",
+      "url": "#",
+      "items": [
         {
-          title: "Virtual Labls",
-          description: "The latest industry news, updates, and info",
-          icon: <Book className="size-5 shrink-0" />,
-          url: "/vlabs",
+          "title": "Virtual Labs",
+          "description": "Explore interactive science experiments.",
+          icon: <Book className='size-5 shrink-0' />,
+          "url": "/vlabs"
         },
         {
-          title: "VLead",
-          description: "Our mission is to innovate and empower the world",
-          icon: <SearchSlash className="size-5 shrink-0" />,
-          url: "vlead",
-        },
-      ],
+          "title": "VLead",
+          "description": "Driving innovation in virtual labs.",
+          icon: <SearchSlash className='size-5 shrink-0' />,
+          "url": "vlead"
+        }
+      ]
     },
     {
-      title: "I am",
-      url: "#",
-      items: [
+      "title": "I am",
+      "url": "#",
+      "items": [
         {
-          title: "Learner",
-          description: "Get all the answers you need right here",
-          icon: <GraduationCap className="size-5 shrink-0" />,
-          url: "/experiments",
+          "title": "Learner",
+          "description": "Access experiments and learning resources.",
+          icon: <GraduationCap className='size-5 shrink-0' />,
+          "url": "/experiments"
         },
         {
-          title: "Facilitator",
-          description: "We are here to help you with any questions you have",
-          icon: <Sunset className="size-5 shrink-0" />,
-          url: "/outreach",
+          "title": "Facilitator",
+          "description": "Support outreach and engagement.",
+          icon: <Sunset className='size-5 shrink-0'/> ,
+          "url": "/outreach"
         },
         {
-          title: "Creator",
-          description: "Check the current status of our services and APIs",
-          icon: <FilePlus className="size-5 shrink-0" />,
-          url: "/development/onboarding",
-        },
-      ],
+          "title": "Creator",
+          "description": "Develop and contribute to virtual labs.",
+          icon: <FilePlus className='size-5 shrink-0' />,
+          "url": "/development/onboarding"
+        }
+      ]
     },
     {
-      title: "I Want to",
-      url: "#",
-      items: [
+      "title": "I Want to",
+      "url": "#",
+      "items": [
         {
-          title: "Create a Experiment",
-          description: "Get all the answers you need right here",
-          icon: <FilePlus className="size-5 shrink-0" />,
-          url: "/development/onboarding",
+          "title": "Create an Experiment",
+          "description": "Develop new virtual lab experiments.",
+          icon: <FilePlus className='size-5 shrink-0' />,
+          "url": "/development/onboarding"
         },
         {
-          title: "Start Learning",
-          description: "We are here to help you with any questions you have",
-          icon: <GraduationCap className="size-5 shrink-0" />,
-          url: "/experiments",
+          "title": "Start Learning",
+          "description": "Begin your journey with virtual labs.",
+          icon: <GraduationCap className='size-5 shrink-0' />,
+          "url": "/experiments"
         },
         {
-          title: "Host Workshop",
-          description: "Check the current status of our services and APIs",
-          icon: <ScreenShare className="size-5 shrink-0" />,
-          url: "/outreach",
+          "title": "Host a Workshop",
+          "description": "Organize training sessions and events.",
+          icon: <ScreenShare className='size-5 shrink-0' />,
+          "url": "/outreach"
         },
         {
-          title: "Explore Research",
-          description: "Check the current status of our services and APIs",
-          icon: <Telescope className="size-5 shrink-0" />,
-          url: "/research/problems",
-        },
-      ],
+          "title": "Explore Research",
+          "description": "Discover ongoing research challenges.",
+          icon: <Telescope className='size-5 shrink-0' />,
+          "url": "/research/problems"
+        }
+      ]
     }
-  ],
+  ]  
 }: HeaderProps) => {
   return (
     <section className="py-4 flex justify-center ">
