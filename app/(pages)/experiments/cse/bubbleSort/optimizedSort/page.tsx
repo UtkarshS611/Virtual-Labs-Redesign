@@ -16,12 +16,12 @@ const OptimizedSort = () => {
               element is placed correctly (at the Tth index from the end).
             </li>
             <li>
-              Given this fact, we can say that if we're on the Tth iteration,
+              Given this fact, we can say that if we&lsquo;re on the Tth iteration,
               the greatest (T-1) elements already occupy their correct places
               among the last (T-1) indices of the array.
             </li>
             <li>
-              Hence, we don't have to compare these elements again and again in
+              Hence, we don&lsquo;t have to compare these elements again and again in
               subsequent iterations. Instead, in the Tth iteration, we can just
               compare the first (N-T+1) elements.
             </li>

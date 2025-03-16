@@ -18,7 +18,7 @@ const Feedback = () => {
     comments: "",
   });
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setFeedback({ name: "", email: "", rating: "5", comments: "" });
   };
