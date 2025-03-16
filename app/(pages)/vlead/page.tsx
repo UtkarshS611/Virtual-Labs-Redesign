@@ -6,6 +6,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { motivation, initiatives, members, timeline } from "./data";
 
+import { Card, CardContent } from "@/components/ui/card";
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
 const Vlead = () => {
   return (
     <section className="min-h-screen py-24">
@@ -19,7 +23,6 @@ const Vlead = () => {
             <TabsTrigger value="Goals and Philosophy">Initiative</TabsTrigger>
             <TabsTrigger value="Timeline">Timeline</TabsTrigger>
             <TabsTrigger value="Current Team">Current Team</TabsTrigger>
-            <TabsTrigger value="Past Team">Past Team</TabsTrigger>
             <TabsTrigger value="Testimonials">Testimonials</TabsTrigger>
           </TabsList>
         </div>
@@ -223,102 +226,162 @@ const Vlead = () => {
             </div>
           </section>
         </TabsContent>
-        <TabsContent value="Past Team">
-          <section className="py-12 md:py-32">
-            <div className="mx-auto max-w-3xl px-8 lg:px-0">
-              <h2 className="mb-8 text-4xl font-bold md:mb-16 lg:text-5xl text-center">
-                Past team
-              </h2>
-
-              <div>
-                <h3 className="mb-6 text-lg font-medium text-primary">
-                  Leadership
-                </h3>
-                <div className="grid grid-cols-2 gap-4 border-t py-6 md:grid-cols-4">
-                  {members.map((member, index) => (
-                    <div key={index}>
-                      <div className="bg-background size-20 rounded-full border p-0.5 shadow shadow-zinc-950/5">
-                        <Image
-                          width={400}
-                          height={400}
-                          className="aspect-square rounded-full object-cover"
-                          src={member.avatar}
-                          alt={member.name}
-                          loading="lazy"
-                        />
-                      </div>
-                      <span className="mt-2 block text-sm">{member.name}</span>
-                      <span className="text-muted-foreground block text-xs">
-                        {member.role}
-                      </span>
-                    </div>
-                  ))}
+        <TabsContent value="Testimonials">
+          <div>
+            <div className="container">
+              <div className="space-y-8 px-6 md:space-y-16 py-16">
+                <div className="relative z-10 mx-auto max-w-xl text-center space-y-6 md:space-y-12">
+                  <h2 className="text-4xl font-medium lg:text-5xl">
+                    Testimonials
+                  </h2>
                 </div>
-              </div>
 
-              <div className="mt-6">
-                <h3 className="mb-6 text-lg font-medium text-primary">
-                  Engineering
-                </h3>
-                <div
-                  data-rounded="full"
-                  className="grid grid-cols-2 gap-4 border-t py-6 md:grid-cols-4"
-                >
-                  {members.map((member, index) => (
-                    <div key={index}>
-                      <div className="bg-background size-20 rounded-full border p-0.5 shadow shadow-zinc-950/5">
-                        <Image
-                          width={400}
-                          height={400}
-                          className="aspect-square rounded-full object-cover"
-                          src={member.avatar}
-                          alt={member.name}
-                          loading="lazy"
-                        />
-                      </div>
-                      <span className="mt-2 block text-sm">{member.name}</span>
-                      <span className="text-muted-foreground block text-xs">
-                        {member.role}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+                <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-rows-2 mx-auto max-w-6xl ">
+                  <Card className="grid grid-rows-[auto_1fr] gap-8 sm:col-span-2 sm:p-6 lg:row-span-2 border-primary">
+                    <CardContent>
+                      <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
+                        <p className="text-xl font-medium">
+                          One of the primary advantages associated with the
+                          utilization of Virtual Laboratory is the ability for
+                          students to engage in self-paced learning. This
+                          technology facilitates students in engaging in
+                          studying, preparing for, and doing laboratory
+                          experiments at their own convenience, regardless of
+                          time and location.
+                        </p>
 
-              <div className="mt-6">
-                <h3 className="mb-6 text-lg font-medium text-primary">
-                  Marketing
-                </h3>
-                <div
-                  data-rounded="full"
-                  className="grid grid-cols-2 gap-4 border-t py-6 md:grid-cols-4"
-                >
-                  {members.map((member, index) => (
-                    <div key={index}>
-                      <div className="bg-background size-20 rounded-full border p-0.5 shadow shadow-zinc-950/5">
-                        <Image
-                        width={400}
-                        height={400}
-                          className="aspect-square rounded-full object-cover"
-                          src={member.avatar}
-                          alt={member.name}
-                          loading="lazy"
-                        />
-                      </div>
-                      <span className="mt-2 block text-sm">{member.name}</span>
-                      <span className="text-muted-foreground block text-xs">
-                        {member.role}
-                      </span>
-                    </div>
-                  ))}
+                        <div className="grid grid-cols-[auto_1fr] items-center gap-3">
+                          <Avatar className="size-12">
+                            <AvatarFallback className="bg-primary/10 text-primary">
+                              MA
+                            </AvatarFallback>
+                          </Avatar>
+
+                          <div>
+                            <cite className="text-sm font-medium">
+                              Dr Mohd Zubair Ansari
+                            </cite>
+                            <span className="text-muted-foreground block text-sm">
+                              National Institute of Technology Srinagar
+                            </span>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </CardContent>
+                  </Card>
+                  <Card className="md:col-span-2 border-primary">
+                    <CardContent className="h-full pt-6">
+                      <blockquote className="grid h-full grid-rows-[1fr_auto]">
+                        <p className="text-xl font-medium">
+                          Virtual Labs at USAR, GGSIPU enhance learning by
+                          bridging theoretical concepts with practical
+                          experiments beyond textbooks. They complement real
+                          labs, improving understanding and performance,
+                          especially when used before paper-based experiments.
+                        </p>
+
+                        <div className="grid grid-cols-[auto_1fr] items-center gap-3">
+                          <Avatar className="size-12">
+                            <AvatarImage
+                              src="https://tailus.io/images/reviews/jonathan.webp"
+                              alt="Jonathan Yombo"
+                              height="400"
+                              width="400"
+                              loading="lazy"
+                            />
+                            <AvatarFallback className="bg-primary/10 text-primary">
+                              KS
+                            </AvatarFallback>
+                          </Avatar>
+                          <div>
+                            <cite className="text-sm font-medium">
+                              Dr. Khyati Chopra
+                            </cite>
+                            <span className="text-muted-foreground block text-sm">
+                              USAR GGSIPU
+                            </span>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </CardContent>
+                  </Card>
+                  <Card className="border-primary">
+                    <CardContent className="h-full pt-6 ">
+                      <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
+                        <p>
+                          Virtual Labs serve as a knowledge seed for science and
+                          technology students, preparing them for real
+                          experiments. This platform enhances learning,
+                          optimizes resources, and offers the convenience of
+                          self-paced exploration.
+                        </p>
+
+                        <div className="grid items-center gap-3 [grid-template-columns:auto_1fr]">
+                          <Avatar className="size-12">
+                            <AvatarImage
+                              src="https://tailus.io/images/reviews/yucel.webp"
+                              alt="Yucel Faruksahan"
+                              height="400"
+                              width="400"
+                              loading="lazy"
+                            />
+                            <AvatarFallback className="bg-primary/10 text-primary">
+                              PG
+                            </AvatarFallback>
+                          </Avatar>
+                          <div>
+                            <cite className="text-sm font-medium">
+                              Dr. Pankaj K. Goswami
+                            </cite>
+                            <span className="text-muted-foreground block text-sm">
+                              Amity University Uttar Pradesh, Lucknow
+                            </span>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </CardContent>
+                  </Card>
+                  <Card className="card variant-mixed border-primary">
+                    <CardContent className="h-full pt-6">
+                      <blockquote className="grid h-full grid-rows-[1fr_auto] gap-6">
+                        <p>
+                          Virtual Lab makes learning easier through simulations
+                          and self-assessment tools like pretests and
+                          post-tests. With a vast range of experiments across
+                          domains, it enhances student engagement and
+                          self-learning. As the Nodal Coordinator for Chameli
+                          Devi Group of Institutions, I highly appreciate its
+                          role in enriching education.
+                        </p>
+
+                        <div className="grid grid-cols-[auto_1fr] gap-3">
+                          <Avatar className="size-12">
+                            <AvatarImage
+                              src="https://tailus.io/images/reviews/rodrigo.webp"
+                              alt="Rodrigo Aguilar"
+                              height="400"
+                              width="400"
+                              loading="lazy"
+                            />
+                            <AvatarFallback className="bg-primary/10 text-primary">
+                              RA
+                            </AvatarFallback>
+                          </Avatar>
+                          <div>
+                            <p className="text-sm font-medium">
+                              Radheshyam Acholia
+                            </p>
+                            <span className="text-muted-foreground block text-sm">
+                              Chameli Devi Group of Institution, Indore
+                            </span>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
             </div>
-          </section>
-        </TabsContent>
-        <TabsContent value="Testimonials">
-          <div>
-            <div className="container">Testimonials</div>
           </div>
         </TabsContent>
       </Tabs>

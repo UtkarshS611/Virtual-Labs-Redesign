@@ -75,47 +75,47 @@ export const gallery = [
 
   export const branches = [
     {
-      imgURL: "/Fields/AmritaVishwaVidyapeetham.avif",
+      imgURL: "/Fields/AmritaVishwaVidyapeetham.png",
       title: "AMRITA VISHWA VIDYAPEETHAM",
     },
     {
-      imgURL: "/Fields/COEPune.avif",
+      imgURL: "/Fields/COEPune.jpg",
       title: "COE PUNE",
     },
     {
-      imgURL: "/Fields/IITBombay.avif",
+      imgURL: "/Fields/IITBombay.png",
       title: "IIT Bombay",
     },
     {
-      imgURL: "/Fields/DayalbaghEducationalInstitute.avif",
+      imgURL: "/Fields/DayalbaghEducationalInstitute.jpg",
       title: "DAYALBAGH EDUCATIONAL INSTITUTE",
     },
     {
-      imgURL: "/Fields/IITDelhi.avif",
+      imgURL: "/Fields/IITDelhi.png",
       title: "IIT Delhi",
     },
     {
-      imgURL: "/Fields/IITGuwahati.avif",
+      imgURL: "/Fields/IITGuwahati.png",
       title: "IIT Guwahati",
     },
     {
-      imgURL: "/Fields/IITKharagpur.avif",
+      imgURL: "/Fields/IITKharagpur.png",
       title: "IIT Kharagpur",
     },
     {
-      imgURL: "/Fields/IITKanpur.avif",
+      imgURL: "/Fields/IITKanpur.png",
       title: "IIT Kanpur",
     },
     {
-      imgURL: "/Fields/IIITHyderabad.avif",
+      imgURL: "/Fields/IIITHyderabad.jpg",
       title: "IIIT Hyderabad",
     },
     {
-      imgURL: "/Fields/IITRoorkee.avif",
+      imgURL: "/Fields/IITRoorkee.jpg",
       title: "IIT Roorkee",
     },
     {
-      imgURL: "/Fields/NITKSurathkal.avif",
+      imgURL: "/Fields/NITKSurathkal.jpg",
       title: "NITK Surathkal",
     },
   ];
